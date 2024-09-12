@@ -19,6 +19,19 @@ public class BookService {
         return bookRepository.findAll();
     }
 
+    public Book addBook(Book book) {
+        return bookRepository.save(book);
+    }
+
+    public boolean deleteBookById(Long id) {
+        if (findBookById(id) == null) {
+            return false;
+        } else {
+            bookRepository.deleteById(id);
+            return true;
+        }
+    }
+
     public Book findBookById(Long id) {
         return bookRepository.findById(id).orElse(null); // Pode retornar null ou lançar uma exceção personalizada
     }
