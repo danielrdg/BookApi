@@ -6,41 +6,29 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-
-import java.time.LocalDate;
 import lombok.Getter;
 import lombok.Setter;
-import lombok.NoArgsConstructor;
-import lombok.AllArgsConstructor;
+import java.time.LocalDate;
 
+@Table(name = "book", schema = "books")
 @Entity
-@Table(name = "book", schema = "books_schema")
 @Getter
 @Setter
-@AllArgsConstructor
-@NoArgsConstructor
 
 public class Book {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
 
-    @Column(nullable = false)
+    @Column(name = "id")
+    private Long id;
+
+    @Column(name = "title")
     private String title;
 
-    @Column(nullable = false)
+    @Column(name = "author")
     private String author;
 
-    @Column(nullable = false)
-    private String publisher;
-
-    @Column(nullable = false)
+    @Column(name = "publication_date")
     private LocalDate publicationDate;
-
-    @Column(nullable = false)
-    private int pages;
-
-    @Column
-    private String isbn;
 }
