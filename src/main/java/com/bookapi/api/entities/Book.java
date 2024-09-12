@@ -1,3 +1,5 @@
+package com.bookapi.api.entities;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -13,6 +15,7 @@ import lombok.AllArgsConstructor;
 @Getter
 @Setter
 @AllArgsConstructor
+@NoArgsConstructor
 public class Book {
 
     @Id
