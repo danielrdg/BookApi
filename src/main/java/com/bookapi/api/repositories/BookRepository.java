@@ -14,4 +14,6 @@ public interface BookRepository extends JpaRepository<Book, Long> {
 
     // Encontra livros publicados em um ano específico
     List<Book> findByPublicationDateYear(int year);
+
+    
 }
