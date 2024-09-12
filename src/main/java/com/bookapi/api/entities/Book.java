@@ -19,6 +19,7 @@ import lombok.AllArgsConstructor;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+
 public class Book {
 
     @Id
