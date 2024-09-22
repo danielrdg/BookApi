@@ -7,12 +7,17 @@ The Book API is a RESTful service for managing books. It allows users to create,
 
 This project is using a structure following Domain Driven Design principles. It includes extensive unit tests for Domain, Controller, and Service layers, as well as custom exception handling and validation to provide a robust and secure application.
 
-Technologies Used
-Java 21
-Spring Boot
-Mapstruct
-Lombok
-Swagger for API Documentation
+<h2>
+  Technologies Used:
+  </h2>
+  <ul>
+    <li>Java 21</li>
+    <li>Spring Boot</li>
+    <li>Lombok</li>
+    <li>Swagger</li>
+  </ul>
+
+
 Testing
 Extensive unit tests have been written and can be found in the /src/test/java directory. These tests cover the Domain, Controller and Service layers to ensure the robustness of the application.
 
