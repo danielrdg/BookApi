@@ -1,4 +1,6 @@
-Book API
+<h1
+  Book API
+  >
 
 
 The Book API is a RESTful service for managing books. It allows users to create, update, delete, and retrieve information about books, as well as register and list events associated with each book.
