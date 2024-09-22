@@ -1,4 +1,6 @@
 Book API
+
+
 The Book API is a RESTful service for managing books. It allows users to create, update, delete, and retrieve information about books, as well as register and list events associated with each book.
 
 This project is using a structure following Domain Driven Design principles. It includes extensive unit tests for Domain, Controller, and Service layers, as well as custom exception handling and validation to provide a robust and secure application.
